@@ -1,0 +1,3 @@
+#+title: shell-command-pro
+
+A collection of useful Emacs' shell and compile commands.
