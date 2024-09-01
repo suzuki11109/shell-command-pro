@@ -1,3 +1,10 @@
 #+title: shell-command-pro
 
 A collection of useful Emacs' shell and compile commands.
+
+* Installation
+#+begin_src emacs-lisp
+(use-package shell-command-pro
+  :ensure t
+  :vc (shell-command-pro :url "https://github.com/suzuki11109/shell-command-pro"))
+#+end_src
