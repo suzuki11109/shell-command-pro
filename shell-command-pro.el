@@ -46,5 +46,14 @@
                    compile-history nil nil nil 'compile-history)))
     (compile command)))
 
+;;;###autoload
+(defun compile-in-dir (dir &optional command)
+  "Run `compile' in the selected directory."
+  (interactive "DCompile in: ")
+  (let ((default-directory dir))
+    (if command
+        (compile command)
+      (call-interactively #'compile))))
+
 (provide 'shell-command-pro)
 ;;; shell-command-pro.el ends here
